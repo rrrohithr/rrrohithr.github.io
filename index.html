@@ -4,29 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Cat Memes</title>
+  <title>Hello</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
   <div class="text-center">
-    <h1 class="text-4xl font-bold mb-4">Random Cat Memes</h1>
     <div id="cat-meme" class="mb-4">
-      <!-- Cat meme will appear here -->
+      <img src="https://cataas.com/cat/says/Hello">
     </div>
-    <button id="new-meme" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Get New Meme</button>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    function fetchCatMeme() {
-      const url = 'https://cataas.com/cat/says/' + encodeURIComponent('Hello');
-      $('#cat-meme').html(`<img src="${url}" alt="Random Cat Meme" class="rounded-lg shadow-lg">`);
-    }
-
-    $('#new-meme').click(fetchCatMeme);
-
-    // Fetch a meme when the page loads
-    $(document).ready(fetchCatMeme);
-  </script>
 </body>
 </html>
